@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #1A1A1A ;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .section-search {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    gap: 5px;
+  }
+
+  .section-films{
+    padding: 15px 30px;
+    /* flex-direction: row; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .section-films p {
+    color: #fff;
+    text-align: center;
+  }

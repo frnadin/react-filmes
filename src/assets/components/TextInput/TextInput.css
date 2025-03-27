@@ -1,0 +1,23 @@
+.container-input {
+    margin: 40px 10px; 
+}
+
+.container-input .input {
+    border-radius: 5px;
+    /* padding: 5px 50px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 160px;
+    padding-left: 10px;
+    font-size: 14px;
+    background-color: #1A1A1A; 
+    color: #ffffffb4;
+    border: 1px solid #7C3AED;
+    text-align: left;
+    outline: none
+}
+
+.container-input .input:focus {
+    background-color: #2e1f4790 ; 
+    transition: 350ms;
+}
