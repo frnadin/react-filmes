@@ -1,0 +1,4 @@
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Herda a cor do texto ao invés de ser azul */
+  }

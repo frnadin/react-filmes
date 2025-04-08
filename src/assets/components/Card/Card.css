@@ -1,7 +1,7 @@
 .film-card{
     color: #FFF;
     text-align: center;
-    border: 5px solid #4B0082  ;
+    border: 5px solid rgb(138, 58, 190)  ;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -9,13 +9,13 @@
     justify-content: space-between;
     align-items: center;
     width: 200px;
-
+    cursor: pointer;
     height: 100%;
     transition: transform 0.3s ease-in-out;
 }
 
 .film-card:hover {
-    transform: scale(1.05); /* Aumenta levemente o tamanho do card ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o tamanho do card ao passar o mouse */
 }
 
 .film-card img {

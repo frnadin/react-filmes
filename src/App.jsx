@@ -5,6 +5,8 @@ import TextInput from './assets/components/TextInput/TextInput'
 import Title from './assets/components/Title/Title'
 import Card from './assets/components/Card/Card'
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 
 const API_KEY = '28d0dee8'
 
@@ -35,7 +37,7 @@ function App() {
   return (
     <>
 
-      <Title title='API Filmes' />
+      <Title title='Movie API' />
 
       <div className='section-search'>
         <TextInput onChange={setFilme} />
@@ -45,10 +47,10 @@ function App() {
       <section className='section-films'>
         {filmes.length > 0 ? (
           filmes.map((item) => (
-            <Card key={item.imdbID} name={item.Title} image={item.Poster} type={item.Type} />
+            <Link to={`/filme/${item.imdbID}`} key={item.imdbID}><Card name={item.Title} image={item.Poster} type={item.Type} /> </Link>
           ))
         ) : (
-          <p>Nenhum filme encontrado</p>
+          <p>No movie found</p>
         )
         }
       </section>
